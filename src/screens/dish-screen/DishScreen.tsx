@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { Card } from '../../components/layout/Card'
 
-interface Props {
+interface Props {}
 
-}
 interface Dish {
   id: string,
   title: string,
@@ -23,10 +22,10 @@ const Title: React.FC<Props> = () => {
 const Dishes: React.FC<Dish> = ({id, title, description, url}) => {
   return (
     <Card>
-      <p>{id}</p>
-      <p>{title}</p>
-      <p>{description}</p>
-      
+        <p>{id}</p>
+        <p>{title}</p>
+        <p>{description}</p>
+        {/* <img src={url} alt="Picture of Dish" /> */}
     </Card>
   )
 }
@@ -39,7 +38,7 @@ export const DishScreen: React.FC<Props> = () => {
     fetch(url, {
       method: "GET",
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       }
     })
     .then(res => res.json())
@@ -50,7 +49,13 @@ export const DishScreen: React.FC<Props> = () => {
   return (
     <div>
         <Title/>
-        {dish && dish.map((single: Dish) => <Dishes id={single.id} key={single.id} title={single.title} description={single.description} url={single.url}/>)}
+        {dish && dish.map((single: Dish) => <Dishes 
+          id={single.id} 
+          key={single.id} 
+          title={single.title} 
+          description={single.description} 
+          url={single.url}
+        />)}
     </div>
   )
 }
