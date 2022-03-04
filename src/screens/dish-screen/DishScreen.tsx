@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
-interface Props {}
+interface Props {
+
+}
+
+
 
 export const DishScreen: React.FC<Props> = () => {
   return (

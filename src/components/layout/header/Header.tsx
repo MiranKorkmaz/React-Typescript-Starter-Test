@@ -4,7 +4,12 @@ import styles from './Header.module.css'
 export const Header = () => {
   return (
     <div className={styles.headerContainer}>
-      <h3>Your navigation between sports and dish screen goes here</h3>
+      <p>
+        <a href="/dishscreen">Dish Screen</a>
+      </p>
+      <p>
+        <a href="/sportscreen">Sport Screen</a>
+      </p>
     </div>
   )
 }
