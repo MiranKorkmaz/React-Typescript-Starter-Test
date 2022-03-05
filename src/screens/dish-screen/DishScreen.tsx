@@ -7,7 +7,7 @@ interface Dish {
   id: string,
   title: string,
   description: string,
-  url: string
+  url?: string
 }
 
 const Title: React.FC<Props> = () => {
@@ -46,6 +46,7 @@ export const DishScreen: React.FC<Props> = () => {
       setDish(data)
     })
   }, [])
+
   function handleOnDelete(id: string) {
     const url = `http://localhost:3000/dishes/${id}`
     fetch(url, {
@@ -73,7 +74,7 @@ return (
             description={single.description} 
             url={single.url}
           />
-          <button onClick={(e) => handleOnDelete(single.id)}>Delete</button>
+          <button onClick={e => {e.preventDefault(); window.location.reload(); handleOnDelete(single.id)}}>Delete</button>
         </div>
       )}
   </div>

@@ -1,9 +1,17 @@
 {
   "dishes": [
-    { "id": 1, "title": "Spaghetti carbonara", "description": "Perfect and delicious spaghetti", "url": "/assets/carbonara.jpg"},
-    { "id": 2, "title": "Chicken", "description": "Perfect and delicious chicken", "url": "/assets/chicken.jpg"},
-    { "id": 3, "title": "Hamburger with fries", "description": "Perfect and delicious hamburger with fries", "url": "/assets/hamburger.jpg"},
-    { "id": 4, "title": "Pizza", "description": "Perfect and delicious pizza", "url": "/assets/pizza.jpg"}
+    {
+      "id": 3,
+      "title": "Hamburger with fries",
+      "description": "Perfect and delicious hamburger with fries",
+      "url": "/assets/hamburger.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pizza",
+      "description": "Perfect and delicious pizza",
+      "url": "/assets/pizza.jpg"
+    }
   ],
   "sports": [
     {
