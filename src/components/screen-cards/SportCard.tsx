@@ -30,10 +30,12 @@ export const Sport: React.FC<SportType> = ({ id, title, description, url }: { id
 
     return (
         <StyledCard>
+        <img src={url} alt="Sport pictures" />
+        <div>
             <h1>{id}.{title}</h1>
             <p>{description}</p>
-            <img src={url} alt="Sport pictures" />
-            <StyledButton onClick={handleOnDelete} >Delete</StyledButton>
+            <StyledButton onClick={handleOnDelete}>Delete</StyledButton>
+        </div>
         </StyledCard>
     )
 }

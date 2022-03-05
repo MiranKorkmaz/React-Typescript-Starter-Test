@@ -29,10 +29,12 @@ export const Dish: React.FC<DishType> = ({ id, title, description, url }: { id: 
 
   return (
     <StyledCard>
-      <h1>{id}.{title}</h1>
-      <p>{description}</p>
       <img src={url} alt="Menu food" />
-      <StyledButton onClick={handleOnDelete}>Delete</StyledButton>
+      <div>
+        <h1>{id}.{title}</h1>
+        <p>{description}</p>
+        <StyledButton onClick={handleOnDelete}>Delete</StyledButton>
+      </div>
     </StyledCard>
   )
 }
