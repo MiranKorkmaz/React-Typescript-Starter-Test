@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import { StyledButton } from '../layout/StyledButton'
-import { StyledCard } from "../layout/StyledCard"
+import { StyledButton } from '../layout/styled-components/StyledButton'
+import { StyledCard } from "../layout/styled-components/StyledCard"
 
 export interface DishType {
   id: string,
