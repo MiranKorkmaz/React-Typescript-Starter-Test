@@ -5,6 +5,9 @@ export const Header = () => {
   return (
     <div className={styles.headerContainer}>
       <p>
+        Pablo's Sportsbar
+      </p>
+      <p>
         <a href="/dishscreen">Dish Screen</a>
       </p>
       <p>
